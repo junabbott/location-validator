@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.typesafe.akka:akka-stream_2.12
+    versions:
+    - 2.6.11
+    - 2.6.12
+    - 2.6.13
+  - dependency-name: com.typesafe.akka:akka-testkit_2.12
+    versions:
+    - 2.6.11
+    - 2.6.12
+    - 2.6.13
